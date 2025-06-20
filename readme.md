@@ -8,7 +8,6 @@
 | 向上移動 | Alt + 上 | Opt + 上 |
 | 游標直接換行 | Ctrl + Enter | Cmd + Enter |
 | 多重選取 | Ctrl + D | Cmd + D |
-| 選擇全部符合 | Ctrl + Shift + L | Cmd + Shift + L |
 | 單行註解 | Ctrl + / | Cmd + / |  不可使用數字鍵上的/ |
 | 向右分割 | Ctrl + \ | Cmd + \ |
 | 刪除列 | Ctrl + Shift + K | Cmd + Shift + K |
