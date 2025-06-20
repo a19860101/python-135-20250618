@@ -35,3 +35,25 @@ print('b')
 # 查詢關鍵字
 import keyword
 print(keyword.kwlist)
+
+# 命名風格
+# Camel Case 駝峰式
+# Pascal Case 烤肉串
+# Snake Case 蛇
+
+
+x , y , z =100,200,300
+
+# unpack
+
+#串列
+
+list1 = ['hello',123,3.14]
+print(list1[0])
+print(list1[1])
+print(list1[2])
+# l1,l2,l3 = list1
+# print(list1)
+# print(l1)
+# print(l2)
+# print(l3)
