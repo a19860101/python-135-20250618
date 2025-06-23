@@ -22,3 +22,5 @@ print(s.find('a'))
 
 # count() 計算文字中出現指定文字的次數
 print(s.count('o'))
+
+
