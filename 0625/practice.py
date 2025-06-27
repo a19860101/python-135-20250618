@@ -16,6 +16,15 @@ for i in range(1,10):
 33
 33不是偶數
 """
+#ans
+# n = int(input())
+#
+# if n % 2 == 0:
+#     print(f'{n}是偶數')
+# else:
+#     print(f'{n}不是偶數')
+
+
 # 練習三
 # 請使用迴圈敘述撰寫一程式，讓使用者輸入兩個正整數a、b（a < b），
 # 利用迴圈計算從a開始連加到b的總和。例如：輸入a=1、b=100，
@@ -29,3 +38,13 @@ for i in range(1,10):
 輸出
 219966
 """
+
+a = int(input())
+b = int(input())
+
+s = 0
+
+for i in range(a,b+1):
+    s += i
+
+print(s)
