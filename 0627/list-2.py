@@ -34,3 +34,16 @@ drinks.insert(3,'可口可樂')
 # clear 清空資料
 drinks.clear()
 print(drinks)
+
+n = [46, 72, 15, 37, 21]
+# sort() 排序
+# n.sort()
+# n.sort(reverse=True)
+# print(n)
+
+# reverse() 反轉
+# n.reverse()
+
+n.sort()
+n.reverse()
+print(n)
