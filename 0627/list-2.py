@@ -17,4 +17,20 @@ print(len(drinks))
 # insert() 插入資料
 drinks.insert(3,'可口可樂')
 
+# print(drinks)
+
+# remove() 移除資料
+# drinks.remove('拿鐵')
+# print(drinks)
+
+# pop() 移除最後一筆資料
+# drinks.pop()
+# print(drinks)
+
+# del 移除資料
+# del drinks[-1]
+# print(drinks)
+
+# clear 清空資料
+drinks.clear()
 print(drinks)
