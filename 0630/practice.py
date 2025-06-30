@@ -34,11 +34,23 @@
 # 範例輸出
 # 50
 
+# a = 21
+# s = 0
+print(sum([i for i in range(int(input()) + 1) if i % 5 == 0]))
 
-import math
+# for i in range(a + 1):
+#     if i % 5 == 0:
+#         s += i
+# print(s)
+
+# import math
 
 # print(math.tan(30))
 # print(math.pi)
 # print(math.pow(2,7))
 # print(math.sqrt(2))
 # print(2 ** 0.5)
+
+n = [1,2,3,4,5]
+
+print(sum(n))
