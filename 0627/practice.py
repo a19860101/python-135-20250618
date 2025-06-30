@@ -26,7 +26,13 @@
 # Perimeter = 85.00
 # Area = 446.50
 
-
+# h = float(input())
+# w = float(input())
+#
+# print(f'Height = {h:.2f}')
+# print(f'Width = {w:.2f}')
+# print(f'Perimeter = {(w+h)*2:.2f}')
+# print(f'Area = {w*h:.2f}')
 
 
 # 練習二
@@ -50,3 +56,11 @@
 # 2010
 # 範例輸出2
 # 2010 is not a leap year.
+
+
+y = int(input())
+
+if y % 4 == 0 and (y % 400 == 0 or y % 100 != 0):
+    print(f'{y} is a leap year.')
+else:
+    print(f'{y} is not a leap year.')
