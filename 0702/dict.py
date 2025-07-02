@@ -25,9 +25,30 @@ users = [
     {
         'name': 'user2',
         'mail': 'xcvzv@gmail.com',
-        'skill': ['photoshop','illustrator']
+        'skill': [
+            {
+                'name': 'Photoshop',
+                'level': '5.0'
+            },
+            {
+                'name': 'Illustrator',
+                'level': '3.5'
+            }
+        ]
+    },
+    {
+        'name': 'user3',
+        'mail': '33333@gmail.com',
+        'skill': [
+            {
+                'name': 'Python',
+                'level': '4.0'
+            }
+        ]
     }
 ]
-print(users[1]['mail'])
+# print(users[1]['mail'])
+# print(users[0]['skill'][0]['level'])
 
-print(users[0]['skill'][0]['level'])
+
+
