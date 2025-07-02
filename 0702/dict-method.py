@@ -26,7 +26,14 @@ d = {
 # d.update({'birth': '1999/12/23'})
 
 # key存在就維持預設，key不存在就新增
-d.setdefault('name', 'Mary')
-d.setdefault('birth', '1999/12/23')
+# d.setdefault('name', 'Mary')
+# d.setdefault('birth', '1999/12/23')
 
+# pop()
+# d.pop('mail')
+
+# popitem()
+# d.popitem()
+
+d.clear()
 print(d)
