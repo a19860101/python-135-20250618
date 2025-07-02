@@ -51,4 +51,10 @@ users = [
 # print(users[0]['skill'][0]['level'])
 
 
+for i in users:
+    print(i['name'])
+    print(i['mail'])
+    # print(i['skill'])
+    for j in i['skill']:
+        print(j['name'])
 
