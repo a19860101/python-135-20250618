@@ -29,11 +29,14 @@ d = {
 # d.setdefault('name', 'Mary')
 # d.setdefault('birth', '1999/12/23')
 
+# 移除指定項目
 # pop()
 # d.pop('mail')
 
+# 移除最後一個項目
 # popitem()
 # d.popitem()
 
+# 清空字典
 d.clear()
 print(d)
