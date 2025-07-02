@@ -58,3 +58,7 @@ for i in users:
     for j in i['skill']:
         print(j['name'])
 
+for i in users:
+    for k, v in i.items():
+        print(f'{k}: {v}')
+
