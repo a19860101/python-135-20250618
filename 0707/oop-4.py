@@ -4,9 +4,9 @@ class Role:
         self.attr = ['草','毒']
         self.weak = ['火']
 
-    # @staticmethod
-    @property
-    def test(self):
+    # @property
+    @staticmethod
+    def test():
         return 'hello'
 
 
@@ -23,6 +23,9 @@ x = Seed()
 print(x.name)
 print(x.attr)
 print(x.weak)
-x.test = 'qqq'
+# x.test = 'qqq'
 # print(x.test)
 print(x.test())
+
+# @property 唯讀
+# @staticmethod 靜態方法
