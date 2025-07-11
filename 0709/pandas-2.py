@@ -14,7 +14,7 @@ numberAge = [int(a) for a in users['age']]
 
 print(numberAge)
 
-age = pd.Series(numberAge)
+age = pd.Series([int(a) for a in users['age']])
 
 print(age)
 print(age.min())
