@@ -8,10 +8,16 @@ import json
 #     print(item['name'])
 #     print(item['email'])
 
-with open('TransService.json','r',encoding='utf-8') as f:
-    jsonData = json.loads(f.read())
+# with open('TransService.json','r',encoding='utf-8') as f:
+#     jsonData = json.loads(f.read())
+#
+# jsonData = [item for item in jsonData if item['animal_kind'] == '狗']
+#
+# for p in jsonData:
+#     print(p['animal_kind'])
 
-jsonData = [item for item in jsonData if item['animal_kind'] == '狗']
 
-for p in jsonData:
-    print(p['animal_kind'])
+with open('Restaurant_C_f.csv','r',encoding='utf-8') as f:
+    data = f.read()
+    print(data)
+
