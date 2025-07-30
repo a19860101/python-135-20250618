@@ -1,6 +1,6 @@
 from PyQt6 import QtWidgets
 from PIL import Image
-import sys, os
+import sys, os, time, uuid
 
 app = QtWidgets.QApplication(sys.argv)
 w = QtWidgets.QWidget()
@@ -59,18 +59,25 @@ def image_resize(path):
             os.makedirs('output', exist_ok=True)
 
             # 打包前
-            # path = os.path.dirname(os.path.abspath(__file__))
+            path = os.path.dirname(os.path.abspath(__file__))
             # path = os.path.dirname(__file__)
 
             # 打包後
-            path = os.path.dirname(os.path.realpath(sys.executable))
+            # path = os.path.dirname(os.path.realpath(sys.executable))
+            # print(path)
 
 
-            print(path)
-            img_name = os.path.basename(img)
+            # 副檔名
+            _, ext = os.path.splitext(img)
+            print(ext)
+
+            # img_name = os.path.basename(img)
+            # img_name = uuid.uuid4()
+            img_name = str(int(time.time()*1000))
             print(img_name)
 
-            small_ta.save(f'{path}/output/{img_name}',quality=quality)
+            # small_ta.save(f'{path}/output/{img_name}',quality=quality)
+            small_ta.save(f'{path}/output/{img_name}{ext}',quality=quality)
         except Exception as e:
             print(e)
 
