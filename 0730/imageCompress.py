@@ -46,28 +46,33 @@ def getfile():
 def image_resize(path):
 
     for idx,img in enumerate(path):
-        ta = Image.open(img)
-        w,h = ta.size
-
-        resize_w = int(input_width.text())
-        resize_h = int(h * resize_w / w)
-
-        quality = int(input_quality.text())
-
-        small_ta = ta.resize((resize_w, resize_h))
-        os.makedirs('output', exist_ok=True)
-
-        path = os.path.dirname(os.path.abspath(__file__))
-
-        print(path)
-        img_name = os.path.basename(img)
-        print(img_name)
-        #
-        #
         try:
+            ta = Image.open(img)
+            w,h = ta.size
+
+            resize_w = int(input_width.text())
+            resize_h = int(h * resize_w / w)
+
+            quality = int(input_quality.text())
+
+            small_ta = ta.resize((resize_w, resize_h))
+            os.makedirs('output', exist_ok=True)
+
+            # 打包前
+            # path = os.path.dirname(os.path.abspath(__file__))
+            # path = os.path.dirname(__file__)
+
+            # 打包後
+            path = os.path.dirname(os.path.realpath(sys.executable))
+
+
+            print(path)
+            img_name = os.path.basename(img)
+            print(img_name)
+
             small_ta.save(f'{path}/output/{img_name}',quality=quality)
         except Exception as e:
-            input_msg.setText(e)
+            print(e)
 
 
 def active():
