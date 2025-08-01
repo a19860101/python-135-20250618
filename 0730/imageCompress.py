@@ -58,11 +58,11 @@ def image_resize(path):
             small_ta = ta.resize((resize_w, resize_h))
             os.makedirs('output', exist_ok=True)
 
-            # 打包前
+            # 打包前路徑
             path = os.path.dirname(os.path.abspath(__file__))
             # path = os.path.dirname(__file__)
 
-            # 打包後
+            # 打包後路徑
             # path = os.path.dirname(os.path.realpath(sys.executable))
             # print(path)
 
@@ -71,7 +71,9 @@ def image_resize(path):
             _, ext = os.path.splitext(img)
             print(ext)
 
+            # 取得檔名
             # img_name = os.path.basename(img)
+            # 產生隨機檔名
             # img_name = uuid.uuid4()
             img_name = str(int(time.time()*1000))
             print(img_name)
